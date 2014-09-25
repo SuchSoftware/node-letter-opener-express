@@ -1,4 +1,3 @@
-letter-opener-node-express
-==========================
+# node-letter-opener-express
 
-Bindings into letter-opener-node sufficient for an Express 4 application.
+Bindings into letter-opener sufficient for an Express 4 application.

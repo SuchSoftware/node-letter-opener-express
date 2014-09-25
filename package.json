@@ -1,0 +1,23 @@
+{
+  "name": "letter-opener-express",
+  "version": "0.0.0",
+  "description": "Bindings into letter-opener sufficient for an Express 4 application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SuchSoftware/node-letter-opener-express"
+  },
+  "keywords": [
+    "email",
+    "development"
+  ],
+  "author": "Ethan Garofolo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SuchSoftware/node-letter-opener-express/issues"
+  },
+  "homepage": "https://github.com/SuchSoftware/node-letter-opener-express"
+}
