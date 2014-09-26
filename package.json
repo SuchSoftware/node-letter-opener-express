@@ -1,6 +1,6 @@
 {
   "name": "letter-opener-express",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Bindings into letter-opener sufficient for an Express 4 application.",
   "dependencies": {
     "express": "^4.9.4",
