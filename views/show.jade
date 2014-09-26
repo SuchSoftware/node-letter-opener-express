@@ -34,7 +34,7 @@ block content
 
   div(class="tab-content")
     div(class="tab-pane active" id="html")
-      != message.payload.html
+      iframe(src="#{root}/message/#{message.id}/html")
     div(class="tab-pane" id="text")
       pre= message.payload.text
     div(class="tab-pane" id="raw")

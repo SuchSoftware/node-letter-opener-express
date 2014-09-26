@@ -47,6 +47,12 @@ function letterOpenerExpress(params) {
       res.send(resBody)
     }
 
+  // Gets just the HTML for a message so that we can load that in via an iframe and not have the main page's
+  // styling interfere with the emails
+  , messageHtml: function(req, res, next) {
+      res.send(req.message.payload.html)
+    }
+
   , about: function(req, res) {
       var context = _.clone(locals)
       context.messages = req.messageFiles
@@ -147,6 +153,9 @@ function letterOpenerExpress(params) {
     .get(findAllMessagesMiddleware, endpoints.index)
 
   router.param('id', loadMessage)
+  router.route('/message/:id/html')
+    .get(findAllMessagesMiddleware, endpoints.messageHtml)
+
   router.route('/message/:id')
     .get(findAllMessagesMiddleware, endpoints.show)
 
